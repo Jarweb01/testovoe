@@ -1,0 +1,178 @@
+/* common styles start */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+main.test1 {
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 10px;
+  margin: 0 auto;
+}
+/* common styles end */
+
+
+
+/* test1 start */
+.test1 .content {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50vh;
+  transform: translate(-50%, -50%);
+  background-color: #f1f1a6;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 10px;
+  margin: 0 auto;
+  min-height: 300px;
+  max-width: 500px;
+}
+/* test1 end */
+
+/* test2 start */
+.fixedBlock {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-color: #b3b321;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  right: 20px;
+  bottom: 20px;
+}
+/* test2 end */
+
+/* test3 start */
+.customBlocks {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+.customBlock {
+  height: 200px;
+  width: 200px;
+  background: #b3b321;
+}
+
+.customBlocks2 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+}
+
+.customBlock2 {
+  width: 90%;
+  height: 100px;
+  background-color: red;
+}
+
+@media (max-width: 1040px) {
+  .customBlocks2 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+/* test3 end */
+
+
+/* test4 start */
+.form {
+  display: flex;
+  width: 100%;
+}
+.form label {
+  width: 100px;
+}
+#textInput {
+  margin: 0 7px;
+  flex-grow: 1;
+}
+.form__btn {
+  width: 200px;
+}
+/* test4 end */
+
+
+/* test5 start */
+.imgBox {
+  display: flex;
+  justify-content: space-between;
+  width: 55%;
+}
+.imgBox__item {
+  width: 48%;
+  height: 180px;
+  background: #b3b321;
+  background-image: url('https://whitewill.ru/.fast_background/4/4a/4ae197a876123a120bb4ba3f4bf3d9d6d56bb272_18_527.webp');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.imgBox__item--contain {
+
+  background-size: contain;
+}
+.imgBox__item--cover {
+  background-size: cover;
+}
+/* test5 end */
+
+
+
+/* test6 start */
+.content6Box {
+  display: flex;
+  justify-content: space-between;
+}
+.content6Box__text {
+  width: 600px;
+  min-width: 600px;
+}
+.content6Box__imgBlock {
+  width: 400px;
+  background-image: url('https://whitewill.ru/.fast_background/4/4a/4ae197a876123a120bb4ba3f4bf3d9d6d56bb272_18_527.webp');
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+/* test6 end */
+
+
+/* test7 start */
+body.test7 {
+  padding: 0;
+  margin: 0;
+}
+.easyTask__item {
+  width: 100vw;
+  height: 100vh;
+}
+.easyTask__item:first-child {
+  background: #b3b321;
+}
+.easyTask__item:last-child {
+  background: #a12a2a;
+}
+/* test7 end */
+
+
+/* test8 start */
+.test8Body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+.test8 {
+  background: #aaa;
+  flex-grow: 1;
+}
+footer {
+  min-height: 200px;
+  background: #a12a2a;
+}
+/* test8 end */
